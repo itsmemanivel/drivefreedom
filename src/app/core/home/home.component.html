@@ -1,0 +1,66 @@
+<pre></pre>
+<div class="container">
+    <div class="grid-banner">
+        <div class="flex1">
+            <div class="headline"> <p>Need A Driver ?</p></div>
+            <div class="request-box">
+                <p><b>Request A Driver Now</b></p>
+                <form class="example-form">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field> 
+                    <mat-form-field appearance="fill" class="example-full-width" color="my-blue">
+                        <mat-label>Service Type</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let service of services" [value]="service.value">
+                            {{service.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </form>
+                <div class="request-box-btn">
+                    <button mat-raised-button  >Request Now</button>
+                </div>
+            </div>
+            <div class="description">
+                <p>DriveFreedom helps Independent delivery drivers get
+                    gigs and <br> build direct relationships with businesses,
+                    groups and <br> individuals
+                </p> 
+            </div>
+        </div>
+        <div class="flex2">
+            <div>
+                <div class="left">
+                    <div class="service_content">
+                        <div>
+                            <p>Drivers Earn More</p>
+                            <button mat-raised-button >Apply Now</button>
+                        </div>
+                        <div>
+                            <p>Join the drivers directory where no comission fees are ever <br> charged and customers can afford to pay you more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="right">
+                    <div class="service_content">
+                        <div>
+                            <p>Buy/Sell Vehicles</p>
+                            <button mat-raised-button >Sell It</button>
+                        </div>
+                        <div>
+                            <p>Independent drivers love our vehicle for sale ads. 100% free ads <br> trial period of 120 days. Fantastic features!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre></pre>
+    </div>
+</div>
+<pre></pre>

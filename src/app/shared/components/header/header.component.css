@@ -1,0 +1,25 @@
+mat-toolbar {
+    width: 100%;
+    background-color: white !important;
+    border-bottom: 5px solid #6DA8A9;
+    position: fixed;
+    z-index: 1;
+}
+
+.toolbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 690px){
+
+    img {
+        width: 40%;
+    }
+
+    span > img {
+        width: 100%;
+    }
+}
